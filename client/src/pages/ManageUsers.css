@@ -1,0 +1,167 @@
+
+.manage-users {
+  padding: 25px;
+  color: #25243a;
+}
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.users-header span {
+  color: #7770d9;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.users-header h1 {
+  margin: 8px 0;
+}
+
+.users-header p {
+  color: #777;
+}
+
+.users-header button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 8px;
+  background: #eeeefe;
+  color: #554bc0;
+  cursor: pointer;
+}
+
+.user-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.user-stats div {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e9e9ef;
+  border-radius: 12px;
+}
+
+.user-stats span {
+  display: block;
+  color: #777;
+  margin-top: 8px;
+}
+
+.user-stats h2 {
+  margin-bottom: 0;
+}
+
+.users-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: white;
+  border: 1px solid #e9e9ef;
+  border-radius: 9px;
+  margin-bottom: 18px;
+}
+
+.users-toolbar input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+}
+
+.users-table-wrap {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e9e9ef;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.users-table th,
+.users-table td {
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.users-table th {
+  background: #f8f8fc;
+  color: #777;
+  font-size: 13px;
+}
+
+.users-table td small {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+}
+
+.users-table select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+.role-label {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #eeeefe;
+  color: #554bc0;
+  font-size: 12px;
+}
+
+.role-label.faculty {
+  background: #e0f7e9;
+  color: #168447;
+}
+
+.role-label.admin {
+  background: #fff0d9;
+  color: #a66a00;
+}
+
+.users-message {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #eeeefe;
+}
+
+.users-empty {
+  text-align: center;
+  padding: 50px;
+  background: white;
+  border-radius: 12px;
+  color: #777;
+}
+
+@media (max-width: 650px) {
+  .manage-users {
+    padding: 15px;
+  }
+
+  .users-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .user-stats {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,174 @@
+.notifications-page {
+  padding: 25px;
+  color: #25243a;
+}
+
+.notifications-page > p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.notification-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.notification-heading span {
+  color: #7770d9;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.notification-heading h1 {
+  margin: 8px 0;
+}
+
+.notification-heading p {
+  color: #777;
+}
+
+.notification-heading button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #eeeefe;
+  color: #554bc0;
+  cursor: pointer;
+}
+
+.notification-list {
+  display: grid;
+  gap: 13px;
+}
+
+.notification-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  margin-bottom: 14px;
+  background: white;
+  border: 1px solid #e9e9ef;
+  border-radius: 12px;
+}
+
+.notification-card h3 {
+  margin: 0 0 7px;
+  font-size: 16px;
+}
+
+.notification-card p {
+  margin: 0 0 8px;
+  color: #555;
+}
+
+.notification-card small {
+  color: #888;
+}
+
+.notification-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #eeeefe;
+  color: #6659d9;
+}
+
+.notification-icon.approved {
+  background: #e0f7e9;
+  color: #168447;
+}
+
+.notification-icon.rejected {
+  background: #ffe6e6;
+  color: #d33;
+}
+
+.notification-icon.pending {
+  background: #fff0dc;
+  color: #c17b19;
+}
+
+.notification-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-content h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.notification-content p {
+  margin: 0 0 7px;
+  color: #777;
+  font-size: 14px;
+}
+
+.notification-content span,
+.notification-content small {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-size: 12px;
+}
+
+.notification-badge {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #fff0dc;
+  color: #a66a00;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.notification-badge.approved {
+  background: #e0f7e9;
+  color: #168447;
+}
+
+.notification-badge.rejected {
+  background: #ffe6e6;
+  color: #d33;
+}
+
+.notification-empty {
+  text-align: center;
+  padding: 55px 15px;
+  background: white;
+  border-radius: 12px;
+  color: #777;
+}
+
+.notification-error {
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #ffe6e6;
+  color: #b42318;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .notifications-page {
+    padding: 15px;
+  }
+
+  .notification-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .notification-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}

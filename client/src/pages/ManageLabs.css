@@ -1,0 +1,202 @@
+
+.manage-labs {
+  padding: 25px;
+  color: #25243a;
+}
+
+.manage-labs-header,
+.manage-lab-top,
+.lab-form-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.manage-labs-header {
+  margin-bottom: 25px;
+}
+
+.manage-labs-header span {
+  color: #7770d9;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.manage-labs-header h1 {
+  margin: 8px 0;
+}
+
+.manage-labs-header p {
+  color: #777;
+}
+
+.manage-labs-actions,
+.manage-lab-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.manage-labs button {
+  border: 0;
+  padding: 10px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.manage-labs-actions button,
+.manage-lab-buttons button {
+  background: #eeeefe;
+  color: #554bc0;
+}
+
+.manage-labs .add-lab-btn,
+.manage-labs .save-lab-btn {
+  background: #6659d9;
+  color: white;
+}
+
+.manage-lab-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.manage-lab-stats div,
+.manage-lab-card {
+  background: white;
+  border: 1px solid #e9e9ef;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.manage-lab-stats span {
+  color: #777;
+}
+
+.manage-lab-stats h2 {
+  margin-bottom: 0;
+}
+
+.manage-lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 17px;
+}
+
+.manage-lab-card h3 {
+  margin: 0 0 5px;
+}
+
+.manage-lab-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.manage-lab-top span {
+  font-size: 12px;
+}
+
+.manage-lab-status {
+  padding: 6px 9px;
+  border-radius: 20px;
+  background: #e0f7e9;
+  color: #168447;
+}
+
+.manage-lab-status.unavailable {
+  background: #ffe6e6;
+  color: #d33;
+}
+
+.manage-lab-buttons {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.manage-labs .delete-lab-btn {
+  background: #ffe6e6;
+  color: #d33;
+}
+
+.lab-message {
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #eeeefe;
+  border-radius: 8px;
+}
+
+.lab-form-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #0008;
+  display: grid;
+  place-items: center;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.lab-form {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  padding: 25px;
+  border-radius: 15px;
+  display: grid;
+  gap: 13px;
+}
+
+.lab-form-heading {
+  margin-bottom: 8px;
+}
+
+.lab-form-heading button {
+  background: #eee;
+}
+
+.lab-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lab-form input,
+.lab-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.lab-form .save-lab-btn {
+  justify-content: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 650px) {
+  .manage-labs {
+    padding: 15px;
+  }
+
+  .manage-labs-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .manage-labs-actions {
+    flex-wrap: wrap;
+  }
+
+  .manage-lab-stats {
+    grid-template-columns: 1fr;
+  }
+}
